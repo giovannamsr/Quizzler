@@ -20,7 +20,6 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPc-6v-h3X">
                                         <rect key="frame" x="0.0" y="0.0" width="324" height="60"/>
-                                        <color key="backgroundColor" red="0.066666666666666666" green="0.19607843137254902" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="jbf-W4-3zA"/>
                                         </constraints>
@@ -34,7 +33,6 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKO-E1-7bG">
                                         <rect key="frame" x="0.0" y="92" width="324" height="60"/>
-                                        <color key="backgroundColor" red="0.066666666669999999" green="0.1960784314" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="ha1-HS-Dwi"/>
                                         </constraints>
@@ -46,7 +44,7 @@
                                             <action selector="answerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dis-AC-EMX"/>
                                         </connections>
                                     </button>
-                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="w0T-Bj-ufZ">
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="w0T-Bj-ufZ">
                                         <rect key="frame" x="0.0" y="184" width="324" height="61"/>
                                         <color key="progressTintColor" red="0.75686274509803919" green="0.81176470588235294" blue="0.75294117647058822" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="trackTintColor" red="0.5156497981331859" green="0.59082870199585602" blue="0.73434078332149622" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

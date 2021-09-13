@@ -39,9 +39,9 @@ class ViewController: UIViewController {
         let userAnswer = sender.currentTitle
         let actualAnswer =  quiz[questionNumber].answer
         if(userAnswer == actualAnswer){
-            print("Correct!")
+            sender.backgroundColor = UIColor.green
         }
-        else{print("Wrong!")}
+        else{sender.backgroundColor = UIColor.red}
         let numberOfQuestions = quiz.count - 1
         if(questionNumber < numberOfQuestions)
         {
@@ -52,7 +52,13 @@ class ViewController: UIViewController {
     }
     
     func updateQuestion(){
-        questionLabel.text = quiz[questionNumber].text
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            self.questionLabel.text = self.quiz[self.questionNumber].text
+            self.trueButton.backgroundColor = UIColor.clear
+            self.falseButton.backgroundColor = UIColor.clear
+            self.progressBar.progress = Float(self.questionNumber) / Float(self.quiz.count)
+        }
+        
     }
 }
 
