@@ -53,8 +53,8 @@
                                     </progressView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question text" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpp-CZ-Vey">
-                                <rect key="frame" x="45" y="109" width="122" height="25.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question text" lineBreakMode="tailTruncation" numberOfLines="18" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpp-CZ-Vey">
+                                <rect key="frame" x="45" y="109" width="324" height="25.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <color key="textColor" red="0.90588235294117647" green="0.8784313725490196" blue="0.78823529411764703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -67,6 +67,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SLD-Gk-PN3" secondAttribute="trailing" constant="45" id="9fE-OZ-0R2"/>
                             <constraint firstItem="jpp-CZ-Vey" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="65" id="aqL-9q-yPK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SLD-Gk-PN3" secondAttribute="bottom" constant="85" id="f0Q-Fu-ma2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jpp-CZ-Vey" secondAttribute="trailing" constant="45" id="gSH-XA-9ou"/>
                             <constraint firstItem="SLD-Gk-PN3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="hsT-Vd-3Qn"/>
                             <constraint firstItem="SLD-Gk-PN3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="inw-LU-CLy"/>
                         </constraints>
