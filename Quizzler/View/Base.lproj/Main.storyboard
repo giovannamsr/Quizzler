@@ -15,13 +15,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="SLD-Gk-PN3">
-                                <rect key="frame" x="45" y="533" width="324" height="244"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SLD-Gk-PN3">
+                                <rect key="frame" x="40" y="44" width="334" height="818"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gw-d2-tK4">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="105"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.90601068740000001" green="0.88023418190000002" blue="0.78819364309999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question text" lineBreakMode="tailTruncation" numberOfLines="18" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpp-CZ-Vey">
+                                        <rect key="frame" x="0.0" y="115" width="334" height="503"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <color key="textColor" red="0.90588235294117647" green="0.8784313725490196" blue="0.78823529411764703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPc-6v-h3X">
-                                        <rect key="frame" x="0.0" y="0.0" width="324" height="60"/>
+                                        <rect key="frame" x="0.0" y="628" width="334" height="80"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="jbf-W4-3zA"/>
+                                            <constraint firstAttribute="height" constant="80" id="sVQ-sk-bwb"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="True">
@@ -32,9 +44,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKO-E1-7bG">
-                                        <rect key="frame" x="0.0" y="92" width="324" height="60"/>
+                                        <rect key="frame" x="0.0" y="718" width="334" height="80"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="ha1-HS-Dwi"/>
+                                            <constraint firstAttribute="height" constant="80" id="feI-vy-syf"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="False">
@@ -45,37 +57,23 @@
                                         </connections>
                                     </button>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="w0T-Bj-ufZ">
-                                        <rect key="frame" x="0.0" y="184" width="324" height="61"/>
+                                        <rect key="frame" x="0.0" y="808" width="334" height="11"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="10" id="BaD-sY-j5X"/>
+                                        </constraints>
                                         <color key="progressTintColor" red="0.75686274509803919" green="0.81176470588235294" blue="0.75294117647058822" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="trackTintColor" red="0.5156497981331859" green="0.59082870199585602" blue="0.73434078332149622" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </progressView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question text" lineBreakMode="tailTruncation" numberOfLines="18" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpp-CZ-Vey">
-                                <rect key="frame" x="45" y="109" width="324" height="25.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <color key="textColor" red="0.90588235294117647" green="0.8784313725490196" blue="0.78823529411764703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gw-d2-tK4">
-                                <rect key="frame" x="45" y="60" width="57.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.90601068740000001" green="0.88023418190000002" blue="0.78819364309999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.41960784313725491" green="0.47843137254901957" blue="0.63137254901960782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="jpp-CZ-Vey" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="30n-Xt-Ap5"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SLD-Gk-PN3" secondAttribute="trailing" constant="45" id="9fE-OZ-0R2"/>
-                            <constraint firstItem="3gw-d2-tK4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="TV0-bV-pIy"/>
-                            <constraint firstItem="jpp-CZ-Vey" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="65" id="aqL-9q-yPK"/>
-                            <constraint firstItem="3gw-d2-tK4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="dtu-Lj-Rmr"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SLD-Gk-PN3" secondAttribute="bottom" constant="85" id="f0Q-Fu-ma2"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jpp-CZ-Vey" secondAttribute="trailing" constant="45" id="gSH-XA-9ou"/>
-                            <constraint firstItem="SLD-Gk-PN3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="hsT-Vd-3Qn"/>
-                            <constraint firstItem="SLD-Gk-PN3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="inw-LU-CLy"/>
+                            <constraint firstItem="SLD-Gk-PN3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Cql-Yv-SC3"/>
+                            <constraint firstItem="SLD-Gk-PN3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ddg-H8-490"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SLD-Gk-PN3" secondAttribute="trailing" constant="40" id="jfz-jF-A84"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SLD-Gk-PN3" secondAttribute="bottom" id="mRy-Si-65I"/>
                         </constraints>
                     </view>
                     <connections>

@@ -7,6 +7,9 @@
 
 import Foundation
 
+Question(q: "Which is the largest organ in the human body?", a: ["Heart", "Skin", "Large Intestine"], correctAnswer: "Skin")
+
+
 struct QuizBrain {
     let quiz = [
         Question(q: "A slug's blood is green.", a: "True"),
@@ -53,8 +56,8 @@ struct QuizBrain {
             userScore = 0
         }
     }
-    func getScoreText() -> String{
-        return "Score: \(userScore)"
+    func getScore() -> Int{
+        return userScore
     }
     
 }
