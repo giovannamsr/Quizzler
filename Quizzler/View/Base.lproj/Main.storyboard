@@ -19,28 +19,44 @@
                                 <rect key="frame" x="40" y="44" width="334" height="818"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gw-d2-tK4">
-                                        <rect key="frame" x="0.0" y="0.0" width="334" height="105"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="81.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.90601068740000001" green="0.88023418190000002" blue="0.78819364309999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question text" lineBreakMode="tailTruncation" numberOfLines="18" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpp-CZ-Vey">
-                                        <rect key="frame" x="0.0" y="115" width="334" height="503"/>
+                                        <rect key="frame" x="0.0" y="91.5" width="334" height="436.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <color key="textColor" red="0.90588235294117647" green="0.8784313725490196" blue="0.78823529411764703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LgT-F9-YNg">
+                                        <rect key="frame" x="0.0" y="538" width="334" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="FyB-yB-NHo"/>
+                                            <constraint firstAttribute="height" constant="80" id="cqO-6e-1b0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
+                                        <state key="normal" title="First Option Button">
+                                            <color key="titleColor" red="0.90588235289999997" green="0.87843137250000003" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="answerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tec-Q9-BCX"/>
+                                            <action selector="firstOptionPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zvL-Qs-2Dy"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPc-6v-h3X">
                                         <rect key="frame" x="0.0" y="628" width="334" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="sVQ-sk-bwb"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="True">
+                                        <state key="normal" title="Second Option Button">
                                             <color key="titleColor" red="0.90588235294117647" green="0.8784313725490196" blue="0.78823529411764703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="answerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hwi-1g-nN2"/>
+                                            <action selector="secondOptionPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="65Z-2Y-zEt"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gKO-E1-7bG">
@@ -49,11 +65,12 @@
                                             <constraint firstAttribute="height" constant="80" id="feI-vy-syf"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="False">
+                                        <state key="normal" title="Third Option Button">
                                             <color key="titleColor" red="0.90588235294117647" green="0.8784313725490196" blue="0.78823529411764703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="answerPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dis-AC-EMX"/>
+                                            <action selector="thirdOptionPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7N3-Av-Uan"/>
                                         </connections>
                                     </button>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="w0T-Bj-ufZ">
@@ -77,11 +94,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="falseButton" destination="gKO-E1-7bG" id="AzK-t3-wcG"/>
+                        <outlet property="firstOptionButton" destination="LgT-F9-YNg" id="hQt-DB-3ds"/>
                         <outlet property="progressBar" destination="w0T-Bj-ufZ" id="pzi-kC-lD4"/>
                         <outlet property="questionLabel" destination="jpp-CZ-Vey" id="9Eu-1F-4Nj"/>
                         <outlet property="scoreLabel" destination="3gw-d2-tK4" id="1vf-HZ-2dR"/>
-                        <outlet property="trueButton" destination="mPc-6v-h3X" id="2pf-io-9wy"/>
+                        <outlet property="secondOptionButton" destination="mPc-6v-h3X" id="SCF-dW-UTM"/>
+                        <outlet property="thirdOptionButton" destination="gKO-E1-7bG" id="vyp-aT-XPN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
