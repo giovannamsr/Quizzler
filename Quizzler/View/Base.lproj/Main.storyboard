@@ -57,13 +57,21 @@
                                 <color key="textColor" red="0.90588235294117647" green="0.8784313725490196" blue="0.78823529411764703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gw-d2-tK4">
+                                <rect key="frame" x="45" y="60" width="57.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.90601068740000001" green="0.88023418190000002" blue="0.78819364309999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.41960784313725491" green="0.47843137254901957" blue="0.63137254901960782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="jpp-CZ-Vey" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="30n-Xt-Ap5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SLD-Gk-PN3" secondAttribute="trailing" constant="45" id="9fE-OZ-0R2"/>
+                            <constraint firstItem="3gw-d2-tK4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="TV0-bV-pIy"/>
                             <constraint firstItem="jpp-CZ-Vey" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="65" id="aqL-9q-yPK"/>
+                            <constraint firstItem="3gw-d2-tK4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="dtu-Lj-Rmr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SLD-Gk-PN3" secondAttribute="bottom" constant="85" id="f0Q-Fu-ma2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jpp-CZ-Vey" secondAttribute="trailing" constant="45" id="gSH-XA-9ou"/>
                             <constraint firstItem="SLD-Gk-PN3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="hsT-Vd-3Qn"/>
@@ -74,6 +82,7 @@
                         <outlet property="falseButton" destination="gKO-E1-7bG" id="AzK-t3-wcG"/>
                         <outlet property="progressBar" destination="w0T-Bj-ufZ" id="pzi-kC-lD4"/>
                         <outlet property="questionLabel" destination="jpp-CZ-Vey" id="9Eu-1F-4Nj"/>
+                        <outlet property="scoreLabel" destination="3gw-d2-tK4" id="1vf-HZ-2dR"/>
                         <outlet property="trueButton" destination="mPc-6v-h3X" id="2pf-io-9wy"/>
                     </connections>
                 </viewController>
