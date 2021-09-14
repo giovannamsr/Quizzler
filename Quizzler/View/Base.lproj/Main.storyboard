@@ -19,13 +19,13 @@
                                 <rect key="frame" x="40" y="44" width="334" height="818"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gw-d2-tK4">
-                                        <rect key="frame" x="0.0" y="0.0" width="334" height="81.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="106"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <color key="textColor" red="0.90601068740000001" green="0.88023418190000002" blue="0.78819364309999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question text" lineBreakMode="tailTruncation" numberOfLines="18" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpp-CZ-Vey">
-                                        <rect key="frame" x="0.0" y="91.5" width="334" height="436.5"/>
+                                        <rect key="frame" x="0.0" y="116" width="334" height="412"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                         <color key="textColor" red="0.90588235294117647" green="0.8784313725490196" blue="0.78823529411764703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
