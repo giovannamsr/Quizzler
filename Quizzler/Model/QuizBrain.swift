@@ -1,19 +1,13 @@
 //
-//  ViewController.swift
+//  QuizBrain.swift
 //  Quizzler
 //
-//  Created by Giovanna Mendes de Sousa Rodrigues on 09/09/21.
+//  Created by Marcelo Rodrigues de Sousa on 14/09/21.
 //
 
-import UIKit
+import Foundation
 
-class ViewController: UIViewController {
-
-    @IBOutlet weak var questionLabel: UILabel!
-    @IBOutlet weak var progressBar: UIProgressView!
-    @IBOutlet weak var trueButton: UIButton!
-    @IBOutlet weak var falseButton: UIButton!
-    
+struct QuizBrain {
     let quiz = [
         Question(q: "A slug's blood is green.", a: "True"),
         Question(q: "Approximately one quarter of human bones are in the feet.", a: "True"),
@@ -26,39 +20,33 @@ class ViewController: UIViewController {
         Question(q: "Buzz Aldrin's mother's maiden name was 'Moon'.", a: "True"),
         Question(q: "The loudest sound produced by any animal is 188 decibels. That animal is the African Elephant.", a: "False"),
         Question(q: "No piece of square dry paper can be folded in half more than 7 times.", a: "False"),
-        Question(q: "Chocolate affects a dog's heart and nervous system; a few ounces are enough to kill a small dog.", a: "True")]
+        Question(q: "Chocolate affects a dog's heart and nervous system; a few ounces are enough to kill a small dog.", a: "True")
+    ]
     
     var questionNumber = 0
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        updateQuestion()
-    }
-
-    @IBAction func answerPressed(_ sender: UIButton) {
-        let userAnswer = sender.currentTitle
-        let actualAnswer =  quiz[questionNumber].answer
-        if(userAnswer == actualAnswer){
-            sender.backgroundColor = UIColor.green
+    func checkAnswer(_ userAnswer : String) -> Bool{
+        
+        if userAnswer == quiz[questionNumber].answer{
+            return true
         }
-        else{sender.backgroundColor = UIColor.red}
+        else{
+            return false
+        }
+    }
+    func getQuestionText() -> String {
+        return quiz[questionNumber].text
+    }
+    func getProgress() -> Float{
+        return Float(questionNumber + 1) / Float(quiz.count)
+    }
+    mutating func nextQuestion(){
         let numberOfQuestions = quiz.count - 1
         if(questionNumber < numberOfQuestions)
         {
             questionNumber += 1
         }
         else{questionNumber = 0}
-        updateQuestion()
     }
     
-    func updateQuestion(){
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
-            self.questionLabel.text = self.quiz[self.questionNumber].text
-            self.trueButton.backgroundColor = UIColor.clear
-            self.falseButton.backgroundColor = UIColor.clear
-            self.progressBar.progress = Float(self.questionNumber) / Float(self.quiz.count)
-        }
-        
-    }
 }
-
